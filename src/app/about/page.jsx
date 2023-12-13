@@ -14,7 +14,8 @@ const AboutPage = () => {
         improve my skills and stand out for my flexibility in the face of
         change. I enjoy collaborating as a team, where I believe creativity
         flourishes. With my focused approach to web design, I aspire to add
-        significant value to each project. Let's build something great together!
+        significant value to each project. Let&apos;s build something great
+        together!
       </p>
       <TechSkills />
     </section>
