@@ -7,7 +7,7 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <section className=" text-center">
+    <section className="text-center">
       <h2 className="text-4xl font-extrabold  mb-4 md:text-6xl">About me</h2>
       <p className="text-secundary leading-7 max-w-3xl mx-auto">
         An enthusiast of web design and new technologies. I constantly seek to
