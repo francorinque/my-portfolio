@@ -8,16 +8,18 @@ const ProjectCard = ({ title, links, tags, src }) => {
         <Image src={src} alt={`Image if project: ${title}`} fill priority />
       </header>
       <h4 className="my-8 text-2xl font-semibold">{title}</h4>
-      <div className="my-8 flex gap-4 items-center flex-start flex-wrap min-h-[84px]">
+
+      <div className="my-8 flex gap-2 items-start flex-start flex-wrap min-h-[70px]">
         {tags.map((tag, index) => (
           <div
             key={index}
-            className="border border-ui p-2 text-xs font-semibold rounded-lg text-primary grid place-content-center"
+            className=" p-2 text-xs font-semibold rounded-lg text-primary/70 "
           >
-            {tag}
+            #{tag}
           </div>
         ))}
       </div>
+
       <footer
         className="flex justify-start font-semibold w-full gap-8 text-md underline underline-offset-2 py-2
       "
