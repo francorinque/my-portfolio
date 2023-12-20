@@ -12,7 +12,6 @@ export const techSkillsData = [
 export const projectsData = [
   {
     title: "Mi Butaca",
-    tags: ["React", "Pasantía", "E-commerce"],
     src: "/portfolio-projects/mibutaca.jpg",
     links: {
       github: "https://github.com/Grupo10Henry/Client.git",
@@ -21,7 +20,6 @@ export const projectsData = [
   },
   {
     title: "Recommerce",
-    tags: ["Frontend", "React", "Redux-toolkit", "API integration"],
     src: "/portfolio-projects/Recommerce.jpg",
     links: {
       github: "https://github.com/francorinque/Recommerce.git",
@@ -30,7 +28,6 @@ export const projectsData = [
   },
   {
     title: "RGames",
-    tags: ["Full Stack", "React", "PostgreSQL", "API integration"],
     src: "/portfolio-projects/Rgames.jpg",
     links: {
       github: "https://github.com/francorinque/rgames-frontend.git",
@@ -39,7 +36,6 @@ export const projectsData = [
   },
   {
     title: "RMovies",
-    tags: ["Frontend", "React", "zustand", "API integration"],
     src: "/portfolio-projects/Rmovies.jpg",
     links: {
       github: "https://github.com/francorinque/RMovies.git",
@@ -48,7 +44,6 @@ export const projectsData = [
   },
   {
     title: "RNews Times",
-    tags: ["Frontend", "React", "Redux-toolkit", "API integration"],
     src: "/portfolio-projects/Rnews.jpg",
     links: {
       github: "https://github.com/francorinque/RNews-Times.git",
@@ -57,7 +52,6 @@ export const projectsData = [
   },
   {
     title: "Car hub",
-    tags: ["Frontend", "Nextjs", "API integration", "Typescript"],
     src: "/portfolio-projects/Cars.jpg",
     links: {
       github: "https://github.com/francorinque/car-next.git",
@@ -66,7 +60,6 @@ export const projectsData = [
   },
   {
     title: "Interior Consultant",
-    tags: ["Frontend", "HTML", "CSS", "JavaScript"],
     src: "/portfolio-projects/interiorConsultant.jpg",
     links: {
       github: "https://github.com/francorinque/Interior-Consultant.git",

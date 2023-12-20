@@ -31,7 +31,6 @@ h2 {
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
   pointer-events: none;
 }
 
@@ -82,14 +81,8 @@ h2 {
   opacity: 25%;
 }
 
-@media screen and (max-width: 640px) {
-  .main {
-    padding: 0;
-  }
-}
-
 .app {
-  @apply relative z-10  max-w-7xl mx-auto pt-40;
+  @apply relative z-10  max-w-7xl mx-auto px-4 md:px-0;
 }
 
 .glassmorphism {

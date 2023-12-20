@@ -3,7 +3,7 @@ import Menu from "./Menu"
 
 const Nav = () => {
   return (
-    <nav className="fixed top-5 z-10 translate-x-[-50%] left-[50%] flex gap-20 items-center filter drop-shadow  px-4  md:justify-between max-w-7xl mx-auto py-4  glassmorphism">
+    <nav className="flex gap-20 items-center filter drop-shadow  px-4 mb-20  md:justify-between mx-auto py-4  max-w-7xl w-full ">
       <Link
         href="/"
         className="w-[50px] h-[50px]  flex items-center justify-center shadow-sm bg-tertiary rounded-blobShape"
