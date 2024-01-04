@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-center md:flex-row md:justify-around gap-5 md:gap-0 relative ">
       <div className="flex flex-col items-center justify-center gap-2">
         <h1 className="mx-auto  max-w-[600px] text-center">
-          Hello, I&apos;m <span className="text-ui">Franco Rinque</span>
+          Hello, I&apos;m Franco Rinque
         </h1>
         <p className="text-2xl">Full Stack Developer</p>
         <Social />

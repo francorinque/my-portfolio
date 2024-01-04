@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { FaLinkSlash } from "react-icons/fa6"
 
 const ProjectCard = ({ title, links, src }) => {
   return (
@@ -11,7 +10,7 @@ const ProjectCard = ({ title, links, src }) => {
 
       <footer
         className="flex justify-start font-semibold w-full gap-8 text-md py-4
-        text-gray-500
+        text-[#BABABA]
       "
       >
         <a

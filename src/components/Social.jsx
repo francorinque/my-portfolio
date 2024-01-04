@@ -33,7 +33,8 @@ const Social = () => {
           title={item.title}
           target="_blank"
           rel="noreferrer"
-          className="bg-ui p-2 rounded-sm text-primary grid place-content-center hover:scale-125 transition-transform "
+          className="bg-ui p-2 rounded-sm text-primary grid place-content-center hover:scale-125 transition-transform"
+          aria-label={item.title}
         >
           {item.icon}
         </a>
