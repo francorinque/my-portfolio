@@ -5,7 +5,7 @@ const ProjectCard = ({ title, links, src }) => {
   return (
     <div className="p-4 rounded-md shadow-md w-full border bg-tertiary text-primary ">
       <header className="object-contain relative w-full h-[300px] rounded-md overflow-hidden">
-        <Image src={src} alt={`Image if project: ${title}`} fill priority />
+        <Image src={src} alt={`Project image name: ${title}`} fill priority />
       </header>
       <h4 className="mt-5  text-2xl font-semibold">{title}</h4>
 
@@ -18,7 +18,7 @@ const ProjectCard = ({ title, links, src }) => {
           href={links.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-ui transition-colors"
+          className="hover:text-ui transition-colors duration-300"
         >
           View Code
         </a>
@@ -26,7 +26,7 @@ const ProjectCard = ({ title, links, src }) => {
           href={links.demo}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-ui transition-colors"
+          className="hover:text-ui transition-colors duration-300"
         >
           View Demo
         </a>

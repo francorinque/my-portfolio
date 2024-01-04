@@ -66,4 +66,12 @@ export const projectsData = [
       demo: "https://interior-consultant-seven-tau.vercel.app/",
     },
   },
+  {
+    title: "Twitch Subscription",
+    src: "/portfolio-projects/twitch-subscription.jpg",
+    links: {
+      github: "https://github.com/francorinque/twitch-subscription.git",
+      demo: "https://twitch-subscription.vercel.app/",
+    },
+  },
 ]
