@@ -1,0 +1,81 @@
+---
+import Badge from "../components/Badge.astro"
+import SocialPill from "../components/SocialPill.astro"
+import Layout from "../layouts/Layout.astro"
+import GithubIcon from "../components/icons/Github.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import Projects from "../components/Projects.astro"
+import Code from "../components/icons/Code.astro"
+import Aboutme from "../components/Aboutme.astro"
+import UserIcon from "../components/icons/User.astro"
+---
+
+<Layout
+  title="Portfolio de Franco Rinque - Programador Web Full Stack "
+  description="Contrata a Franco Rinque para crear tu sitio web"
+>
+  <main>
+    <!-- hero -->
+    <SectionContainer id="inicio">
+      <img
+        src="/me.jpg"
+        alt="profile picture"
+        class="rounded-full size-16 mb-4"
+      />
+      <div
+        class="py-5 flex flex-col gap-4 items-start md:flex-row md:items-center"
+      >
+        <h1 class="text-3xl
+      font-bold">Hey, soy Franco Rinque</h1>
+        <a
+          href="https://www.linkedin.com/in/francorinque"
+          class="flex items-center justify-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </div>
+      <h2 class="text-xl opacity-80 text-pretty">
+        Desarrollador Web Frontend de Buenos Aires, Argentina. Listo para crear <span
+          class="text-amber-100">aplicaciones web únicas</span
+        >.
+      </h2>
+
+      <nav class="mt-5 flex items-center justify-start gap-4">
+        <SocialPill href="https://github.com/francorinque">
+          <GithubIcon class="size-6" />
+          Github
+        </SocialPill>
+        <SocialPill href="https://linkedin.com/in/francorinque">
+          <LinkedInIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="mailto:francoagustinrinquecorreo@gmail.com">
+          <MailIcon class="size-6" />
+          Correo
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <!-- proyectos -->
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl flex items-center gap-2 font-bold">
+        <Code />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <!-- about me -->
+    <SectionContainer id="sobremi">
+      <h2 class="text-3xl flex items-center gap-2 font-bold">
+        <UserIcon />
+        Sobre mi
+      </h2>
+      <Aboutme />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style></style>

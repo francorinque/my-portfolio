@@ -1,0 +1,87 @@
+---
+import Card from "./Card.astro"
+//icons
+import ReactIcon from "../components/icons/React.astro"
+import FramerIcon from "../components/icons/Framer.astro"
+import HtmlIcon from "../components/icons/Html.astro"
+import CssIcon from "../components/icons/Css.astro"
+import JavascriptIcon from "../components/icons/Javascript.astro"
+import ReduxIcon from "./icons/Redux.astro"
+
+const TAGS = {
+  REACT: {
+    name: "React",
+    class: "bg-[#23272f] text-[#f6f7f9]",
+    icon: ReactIcon,
+  },
+  FRAMER_MOTION: {
+    name: "Framer Motion",
+    class: "bg-[#1a1a1a] text-[#f6f7f9]",
+    icon: FramerIcon,
+  },
+  ZUSTAND: {
+    name: "Zustand",
+    class: "bg-[#181818] text-white",
+    icon: null,
+  },
+  HTML: {
+    name: "HTML",
+    class: "bg-[#23272f] text-[#f6f7f9]",
+    icon: HtmlIcon,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#062d48] text-[#f6f7f9]",
+    icon: CssIcon,
+  },
+  JS: {
+    name: "JavaScript",
+    class: "bg-[#23272f] text-[#f6f7f9]",
+    icon: JavascriptIcon,
+  },
+  REDUX: {
+    name: "Redux toolkit",
+    class: "bg-[#211338] text-[#f6f7f9]",
+    icon: ReduxIcon,
+  },
+}
+
+const PROJECTS = [
+  {
+    title: "Mi Butaca - Pasantía",
+    desc: "Un e-commerce para la empresa Tres Grupo Creativo, colaboré con el diseño responsive, renderización de datos, lógica de las reviews, y los filtros combinados.",
+    github: "https://github.com/Grupo10Henry/Client.git",
+    deploy: "https://mibutaca.vercel.app/",
+    img: "/projects/mibutaca.webp",
+    tags: [TAGS.REACT, TAGS.REDUX, TAGS.CSS],
+  },
+  {
+    title: "RMovies",
+    desc: "Una aplicación web para buscar películas y series, integrando la API de TMDB.",
+    github: "https://github.com/francorinque/RMovies.git",
+    deploy: "https://r-movies-two.vercel.app/",
+    img: "/projects/rmovies.webp",
+    tags: [TAGS.REACT, TAGS.FRAMER_MOTION, TAGS.ZUSTAND],
+  },
+  {
+    title: "RNews",
+    desc: "Una web de noticias en línea, integrando la API de New York Times.",
+    github: "https://github.com/francorinque/RNews-Times.git",
+    deploy: "https://r-news-times.vercel.app/",
+    img: "/projects/rnews.webp",
+    tags: [TAGS.REACT, TAGS.FRAMER_MOTION, TAGS.ZUSTAND],
+  },
+  {
+    title: "Twitch Subscription",
+    desc: "Una web de subscripción de Twitch en varios canales con un solo click.",
+    github: "https://github.com/francorinque/twitch-subscription.git",
+    deploy: "http://twitch-subscription.vercel.app/",
+    img: "/projects/twitch.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS],
+  },
+]
+---
+
+<div class="flex flex-col gap-8">
+  {PROJECTS.map((project) => <Card {...project} />)}
+</div>
