@@ -1,12 +1,9 @@
 <span
-  class="text-xs
-   font-medium
-   me-2
-   px-2.5
-   py-1
-   rounded
-   user-select-none
-    dark:bg-green-200
-     dark:text-gray-800"
-  ><slot /></span
+  class="flex cursor-pointer items-center justify-center rounded-full border border-slate-800 bg-black px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur-3xl"
 >
+  <span
+    class="bg-gradient-to-t from-[#fff] to-[#8678f9] bg-clip-text text-transparent flex items-center gap-x-2"
+  >
+    <slot />
+  </span>
+</span>

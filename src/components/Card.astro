@@ -2,10 +2,10 @@
 import GithubIcon from "./icons/Github.astro"
 import EyeIcon from "./icons/Eye.astro"
 import SocialPill from "./SocialPill.astro"
+import Badge from "./Badge.astro"
 
 interface TagsProps {
   name: string
-  class: string
   icon: any
 }
 
@@ -28,12 +28,10 @@ const { github, tags, deploy, img, desc, title } = Astro.props
   <div class="flex gap-4">
     {
       tags.map((tag: TagsProps) => (
-        <p
-          class={`flex items-center justify-center gap-x-2 py-2 px-4 rounded-full text-xs ${tag.class}`}
-        >
+        <Badge>
           {tag.icon && <tag.icon class="size-4" />}
           {tag.name}
-        </p>
+        </Badge>
       ))
     }
   </div>
